@@ -10,8 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: azure/login@v1
-    env:
-CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+
       with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
